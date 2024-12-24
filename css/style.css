@@ -1,0 +1,342 @@
+/* Start Variables */
+:root {
+  --main-color: #1a1a1a;
+  --yellow-color: #e0c548;
+  --transparent-color: rgba(62, 62, 62, 70%);
+  --section-padding: 100px;
+}
+/* End Variables */
+/* Start Global Rules */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  height: 100vh;
+  background-color: var(--main-color);
+}
+ul {
+  list-style: none;
+}
+*::selection {
+  background-color: #ffe15e;
+  color: #333;
+}
+.component {
+  color: white;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width: 60%;
+}
+.component h1 {
+  text-align: center;
+}
+.component h1 span {
+  color: var(--yellow-color);
+}
+.component hr {
+  margin: 20px 0;
+  width: 100%;
+}
+
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 992px) {
+  main,
+  .About {
+    margin: 0 26rem;
+  }
+  .component {
+    margin: 0 22rem;
+  }
+}
+
+/* Start header styles */
+header {
+  position: fixed;
+  z-index: 5;
+  background-color: #212121;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+  width: 18rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  text-align: center;
+}
+header .image {
+  padding: 20px;
+}
+header .image img {
+  height: 110px;
+  width: 110px;
+  border-radius: 50%;
+  outline: solid 5px var(--yellow-color);
+}
+header h2 {
+  font-size: 25px;
+}
+header h4 {
+  font-size: x-large;
+  font-weight: normal;
+  padding: 10px;
+  padding: 10px 0;
+  text-shadow: 1px 1px var(--yellow-color);
+}
+header nav ul {
+  padding: 0px 20px;
+  width: 17rem;
+}
+header nav li {
+  background-color: #333;
+  width: 100%;
+  text-align: center;
+  height: 40px;
+  margin: 10px 0px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header nav li a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+}
+header nav li:hover {
+  background-color: var(--yellow-color);
+}
+
+/* End header styles */
+/* Start main styles */
+
+#menu,
+#menu2 {
+  position: fixed;
+  top: 0.8rem;
+  right: 0.8rem;
+  background-color: #333;
+  font-size: x-large;
+  color: white;
+  padding: 5px;
+  cursor: pointer;
+  display: none;
+}
+/* Medium */
+@media (max-width: 992px) {
+  #menu {
+    display: block;
+  }
+  #menu2 {
+    position: absolute;
+    display: block;
+    top: 0.8rem;
+    right: 1.8rem;
+    cursor: pointer;
+  }
+  header {
+    left: -30rem;
+  }
+  main,
+  .About {
+    margin: 20px auto;
+  }
+}
+
+/* Stat main styles */
+
+main {
+  width: 40%;
+  height: 600px;
+  color: white;
+  font-weight: normal;
+  padding-top: 80px;
+}
+main h2 {
+  font-size: 25px;
+}
+main h3 {
+  font-size: 35px;
+}
+main h3 span {
+  color: var(--yellow-color);
+}
+main p {
+  font-size: 20px;
+  font-weight: 300;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.ME {
+  color: white;
+  background-color: #333;
+  display: flex;
+  justify-content: space-evenly;
+  width: 200px;
+  border-radius: 20px;
+  padding: 8px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+/* End main styles  */
+/* Start About styles  */
+.About {
+  padding-bottom: 100px;
+  width: 60%;
+  height: 100%;
+  color: white;
+  font-weight: normal;
+}
+
+.About .cards {
+  padding-top: 20px;
+}
+
+.About .info2 {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+.About .info2 ul {
+  padding: 20px;
+  width: 50%;
+}
+.About .info2 ul li {
+  padding-bottom: 15px;
+}
+.About .info2 ul li span {
+  color: var(--yellow-color);
+}
+.About .info2 .cards {
+  display: flex;
+  justify-content: space-be;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.About .info2 .card {
+  width: 40%;
+  height: 40%;
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+  background-color: #333;
+}
+
+/* End About styles  */
+
+/* start education styles  */
+.Education {
+  width: 60%;
+  height: 100%;
+  color: white;
+  display: flex;
+  margin-left: 25rem;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.Education .box {
+  position: relative;
+  width: 40%;
+  height: 40%;
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+}
+.Education .box:last-of-type {
+  margin: auto;
+}
+.Education .box i {
+  position: relative;
+  background-color: var(--yellow-color);
+  color: white;
+  padding: 10px;
+  font-size: 25px;
+  border-radius: 50%;
+  position: absolute;
+  left: -20%;
+  top: 10%;
+}
+.Education .box i::after{
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: 180px;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+}
+.Education .box .year {
+  background-color: #333;
+  width: 100px;
+  padding: 10px;
+  border-radius: 10px;
+  margin: auto;
+  margin-bottom: 10px;
+}
+.Education .box p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+}
+/* end education styles  */
+/* Tablets */
+@media (max-width: 768px) {
+  .Education {
+    padding: 20px;
+  }
+
+  .Education .box {
+    width: 100%; /* Full width for education boxes */
+  }
+
+  header nav ul {
+    width: 100%; /* Expand navigation links to full width */
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  header {
+    height: auto; /* Let height adjust to content */
+    padding: 10px;
+  }
+
+  header .image img {
+    height: 70px; /* Smaller profile image */
+    width: 70px;
+  }
+
+  .Education .box {
+    padding: 15px;
+  }
+
+  main, .About, .component {
+    width: 100%; /* Full width */
+    padding: 15px;
+  }
+}

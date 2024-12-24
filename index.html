@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
+    <!-- Font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Main CSS file -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <i id="menu2" onclick="hideHeader()" class="fa-solid fa-xmark"></i>
+        <div class="image">
+          <img src="images/photo_2024-12-21_19-27-37.jpg" alt="My Photo" />
+        </div>
+        <h2>
+          Mekidiche <br />
+          Mohammed Hicham
+        </h2>
+        <h4>Web developer</h4>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#Home">Home</a></li>
+          <li><a href="#About">About</a></li>
+          <li><a href="#Education">Education</a></li>
+          <li><a href="#Portfolio">Portfolio</a></li>
+          <li><a href="#Contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <i id="menu" onclick="showHeader()" class="fas fa-bars"></i>
+
+    <main id="Home">
+      <h2>Hi There!</h2>
+      <h3>
+        I'M <span>Mekidiche <br />Mohammed Hicham</span>
+      </h3>
+      <p>
+        Hello again. I am a computer science student at the University of Tlemcen, and I'm really enjoying my education and I'm very happy to be a Cywork Club member, and I expect that I will be developing myself with you in many skills. Thank you very much.
+      </p>
+      <div class="ME">About Me <i class="fa-regular fa-user"></i></div>
+    </main>
+
+    <div class="component" id="About">
+      <h1><span> About</span>Me</h1>
+      <hr />
+    </div>
+    <div class="About">
+      <div class="info2">
+        <ul>
+          <li>Name : <span>Mekidiche Mohammed Hicham</span></li>
+          <li>Age : <span>23</span></li>
+          <li>Post : <span>Web Developer</span></li>
+          <li>Country : <span>Algeria</span></li>
+          <li>Language : <span>Arab</span></li>
+          <div class="ME">Download CV<i class="fa-solid fa-download"></i></div>
+        </ul>
+        <div class="cards">
+          <div class="card">
+            <h2>+2</h2>
+            <h3>Year of Experience</h3>
+          </div>
+          <div class="card">
+            <h2>+20</h2>
+            <h3>Projects Completed</h3>
+          </div>
+          <div class="card">
+            <h2>+15</h2>
+            <h3>Happy Customers</h3>
+          </div>
+          <div class="card">
+            <h2>+8</h2>
+            <h3>Awards Won</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="component" id="Education">
+      <h1><span> My </span>Education</h1>
+      <hr />
+    </div>
+    <div class="Education">
+      <div class="box">
+        <i class="fa-solid fa-graduation-cap"></i>
+        <div class="year">2022</div>
+        <h2>Computer science 1st year</h2>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis
+          distinctio tenetur dolorum, laboriosam 
+        </p>
+      </div>
+      <div class="box">
+        <i class="fa-solid fa-graduation-cap"></i>
+        <div class="year">2023</div>
+        <h2>Computer science 2nd year</h2>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis
+          distinctio tenetur dolorum, laboriosam 
+        </p>
+      </div>
+      <div class="box">
+        <i class="fa-solid fa-graduation-cap"></i>
+        <div class="year">2024</div>
+        <h2>Computer science 3rd year</h2>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis
+          distinctio tenetur dolorum, laboriosam 
+        </p>
+      </div>
+    </div>
+
+    <!-- JQuery script  -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-JobWAqYk5CSjWuVV3mxgS+MmccJqkrBaDhk8SKS1BW+71dJ9gzascwzW85UwGhxiSyR7Pxhu50k+Nl3+o5I49A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- main JS File -->
+    <script src="JS/script.js"></script>
+  </body>
+</html>
